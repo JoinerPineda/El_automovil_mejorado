@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Conducción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="simulador">
+        <h1>Simulador de Conducción</h1>
+        <div class="info-coche">
+            <p>Marca: <span id="marca"></span></p>
+            <p>Modelo: <span id="modelo"></span></p>
+            <p>Año: <span id="año"></span></p>
+            <p>Color: <span id="color"></span></p>
+            <p>Nivel de Combustible: <span id="nivel_combustible">10</span> galones</p>
+            <p>Motor: <span id="estado_motor">Apagado</span></p>
+        </div>
+        <div class="controles">
+            <button onclick="encender()">Encender</button>
+            <button onclick="apagar()">Apagar</button>
+            <button onclick="acelerar()">Acelerar</button>
+            <button onclick="recargar()">Recargar</button>
+        </div>
+        <p id="mensaje"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
